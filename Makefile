@@ -1,4 +1,4 @@
-PYTHON ?= python3
+PYTHON ?= python3.14
 export PYTHONPATH := $(CURDIR)/src
 
 .PHONY: help test tidy run list install-local uninstall clean

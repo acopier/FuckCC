@@ -84,10 +84,10 @@ via `/bin/rm` (no `sudo` prompt).
 ```
 ./bin/fuckcc --help          # uses the working tree
 # or
-PYTHONPATH=src python3 -m fuckcc --help
+PYTHONPATH=src python3.14 -m fuckcc --help
 ```
 
-Requires Python 3.9+ (standard library only — no pip packages).
+Requires Python 3.14+ (standard library only — no pip packages).
 
 ## Usage
 
