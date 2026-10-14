@@ -1,0 +1,482 @@
+{
+ "Name": "Photoshop",
+ "SAPCode": "PHSP",
+ "CodexVersion": "27.11",
+ "ProductVersion": "27.11.0.26",
+ "BaseVersion": "27.0",
+ "Platform": "macuniversal",
+ "SupportedLanguages": {
+  "Language": [
+   {
+    "value": "",
+    "locale": "ar_AE"
+   },
+   {
+    "value": "",
+    "locale": "cs_CZ"
+   },
+   {
+    "value": "",
+    "locale": "da_DK"
+   },
+   {
+    "value": "",
+    "locale": "de_DE"
+   },
+   {
+    "value": "",
+    "locale": "en_AE"
+   },
+   {
+    "value": "",
+    "locale": "en_GB"
+   },
+   {
+    "value": "",
+    "locale": "en_IL"
+   },
+   {
+    "value": "",
+    "locale": "en_US"
+   },
+   {
+    "value": "",
+    "locale": "en_XM"
+   },
+   {
+    "value": "",
+    "locale": "es_ES"
+   },
+   {
+    "value": "",
+    "locale": "es_MX"
+   },
+   {
+    "value": "",
+    "locale": "fi_FI"
+   },
+   {
+    "value": "",
+    "locale": "fr_CA"
+   },
+   {
+    "value": "",
+    "locale": "fr_FR"
+   },
+   {
+    "value": "",
+    "locale": "fr_MA"
+   },
+   {
+    "value": "",
+    "locale": "fr_XM"
+   },
+   {
+    "value": "",
+    "locale": "he_IL"
+   },
+   {
+    "value": "",
+    "locale": "hu_HU"
+   },
+   {
+    "value": "",
+    "locale": "id_ID"
+   },
+   {
+    "value": "",
+    "locale": "it_IT"
+   },
+   {
+    "value": "",
+    "locale": "ja_JP"
+   },
+   {
+    "value": "",
+    "locale": "ko_KR"
+   },
+   {
+    "value": "",
+    "locale": "nb_NO"
+   },
+   {
+    "value": "",
+    "locale": "nl_NL"
+   },
+   {
+    "value": "",
+    "locale": "no_NO"
+   },
+   {
+    "value": "",
+    "locale": "pl_PL"
+   },
+   {
+    "value": "",
+    "locale": "pt_BR"
+   },
+   {
+    "value": "",
+    "locale": "ru_RU"
+   },
+   {
+    "value": "",
+    "locale": "sl_SI"
+   },
+   {
+    "value": "",
+    "locale": "sv_SE"
+   },
+   {
+    "value": "",
+    "locale": "tr_TR"
+   },
+   {
+    "value": "",
+    "locale": "uk_UA"
+   },
+   {
+    "value": "",
+    "locale": "vi_VN"
+   },
+   {
+    "value": "",
+    "locale": "zh_CN"
+   },
+   {
+    "value": "",
+    "locale": "zh_TW"
+   }
+  ]
+ },
+ "LanguageSet": "LS20",
+ "Dependencies": {
+  "Dependency": [
+   {
+    "SAPCode": "COCM",
+    "BaseVersion": "1.0"
+   },
+   {
+    "SAPCode": "CORG",
+    "BaseVersion": "1.0"
+   },
+   {
+    "SAPCode": "CORE",
+    "BaseVersion": "1.0"
+   },
+   {
+    "SAPCode": "COPS",
+    "BaseVersion": "1.0"
+   },
+   {
+    "SAPCode": "COMP",
+    "BaseVersion": "1.0"
+   },
+   {
+    "SAPCode": "COSY",
+    "BaseVersion": "2.4.1"
+   },
+   {
+    "SAPCode": "CCXP",
+    "BaseVersion": "2.2.1"
+   },
+   {
+    "SAPCode": "ACR",
+    "BaseVersion": "9.6"
+   },
+   {
+    "SAPCode": "LIBS",
+    "BaseVersion": "2.14.7"
+   },
+   {
+    "SAPCode": "SEPS",
+    "BaseVersion": "0.7.0"
+   },
+   {
+    "SAPCode": "UAM",
+    "BaseVersion": "1.48"
+   }
+  ]
+ },
+ "SystemRequirement": {
+  "OsVersion": {
+   "min": "13.0.0"
+  },
+  "ExternalUrl": {
+   "Stage": {
+    "Language": [
+     {
+      "value": "https://helpx.adobe.com/photoshop/system-requirements.html",
+      "locale": "mul"
+     }
+    ]
+   },
+   "Prod": {
+    "Language": [
+     {
+      "value": "https://helpx.adobe.com/photoshop/system-requirements.html",
+      "locale": "mul"
+     }
+    ]
+   }
+  },
+  "CheckCompatibility": {
+   "Content": "var winChecks={minOSVersion:\"10.0.0.14392\",excludedOSVersions:[\"10.0.0.15063\",\"10.0.0.16299\",\"10.0.0.17134\",\"10.0.0.18362\",\"10.0.0.18363\",\"10.0.0.19041\",\"10.0.0.19042\",\"10.0.0.19043\",\"10.0.0.22000\",\"10.0.0.22621\"]};var macChecks={minOSVersion:\"13.0.0\",permissiveOS:\"14.0.0\"};var localizationStringMap={en_US:{OperatingSystemWin:\"Windows 11 version 23H2 or later\",OperatingSystemMac:\"macOS 14.0 or later\",InstructionSet_SSE42:\"SSE 4.2 or later\",InstructionSet_AVX2:\"Processor with Advanced Vector Extensions 2 (AVX2) support required\"},cs_CZ:{OperatingSystemWin:\"Windows 11 ve verz\u00edch 23H2 nebo vy\u0161\u0161\u00ed\",OperatingSystemMac:\"macOS 14.0 nebo nov\u011bj\u0161\u00ed\",InstructionSet_SSE42:\"SSE 4.2 nebo nov\u011bj\u0161\u00ed\",InstructionSet_AVX2:\"Je vy\u017eadov\u00e1n procesor s podporou Advanced Vector Extensions 2 (AVX2)\"},da_DK:{OperatingSystemWin:\"Windows 11 version 23H2 eller nyere\",OperatingSystemMac:\"macOS 14.0 eller nyere\",InstructionSet_SSE42:\"SSE 4.2 eller nyere\",InstructionSet_AVX2:\"Processor med avancerede vektorudvidelser (AVX2) kr\u00e6ver support\"},de_DE:{OperatingSystemWin:\"Windows 11 Version 23H2 oder h\u00f6her\",OperatingSystemMac:\"macOS 14.0 oder h\u00f6her\",InstructionSet_SSE42:\"SSE 4.2 oder h\u00f6her\",InstructionSet_AVX2:\"Prozessor mit Unterst\u00fctzung f\u00fcr Advanced Vector Extensions 2 (AVX2) erforderlich\"},es_ES:{OperatingSystemWin:\"la versi\u00f3n 23H2 Windows 11 o posterior\",OperatingSystemMac:\"macOS 14.0 o posterior\",InstructionSet_SSE42:\"SSE 4.2 o posterior\",InstructionSet_AVX2:\"Se necesita procesador compatible con AVX2 (Advanced Vector Extensions 2)\"},es_MX:{OperatingSystemWin:\"la versi\u00f3n 23H2 de Windows 11 o posterior\",OperatingSystemMac:\"macOS 14.0 o posterior\",InstructionSet_SSE42:\"SSE 4.2 o posterior\",InstructionSet_AVX2:\"Se necesita procesador compatible con AVX2 (Advanced Vector Extensions 2)\"},fi_FI:{OperatingSystemWin:\"Windows 11:n versiota 23H2 tai uudempi\",OperatingSystemMac:\"macOS 14.0 tai uudempi\",InstructionSet_SSE42:\"SSE 4.2 tai uudempi\",InstructionSet_AVX2:\"Edellytt\u00e4\u00e4, ett\u00e4 suoritin tukee Advanced Vector Extensions 2 (AVX2) -laajennoksia\"},fr_CA:{OperatingSystemWin:\"Windows 11 version 23H2 ou version ult\u00e9rieure\",OperatingSystemMac:\"macOS 14.0 ou version ult\u00e9rieure\",InstructionSet_SSE42:\"SSE 4.2 ou version ult\u00e9rieure\",InstructionSet_AVX2:\"Processeur avec prise en charge d\u2019Advanced Vector Extensions 2 (AVX2) obligatoire\"},fr_MA:{OperatingSystemWin:\"Windows 11 version 23H2 ou version ult\u00e9rieure\",OperatingSystemMac:\"macOS 14.0 ou version ult\u00e9rieure\",InstructionSet_SSE42:\"SSE 4.2 ou version ult\u00e9rieure\",InstructionSet_AVX2:\"Processeur avec prise en charge d\u2019Advanced Vector Extensions 2 (AVX2) obligatoire\"},fr_FR:{OperatingSystemWin:\"Windows 11 version 23H2 ou version ult\u00e9rieure\",OperatingSystemMac:\"macOS 14.0 ou version ult\u00e9rieure\",InstructionSet_SSE42:\"SSE 4.2 ou version ult\u00e9rieure\",InstructionSet_AVX2:\"Processeur avec prise en charge d\u2019Advanced Vector Extensions 2 (AVX2) obligatoire\"},hu_HU:{OperatingSystemWin:\"Windows 11 23H2-es verzi\u00f3ja vagy \u00fajabb\",OperatingSystemMac:\"macOS 14.0 vagy \u00fajabb\",InstructionSet_SSE42:\"SSE 4.2 vagy \u00fajabb\",InstructionSet_AVX2:\"Advanced Vector Extensions 2 (AVX2) t\u00e1mogat\u00e1ssal rendelkez\u0151 processzor sz\u00fcks\u00e9ges\"},id_ID:{OperatingSystemWin:\"Windows 11 version 23H2 or later\",OperatingSystemMac:\"macOS 14.0 or later\",InstructionSet_SSE42:\"SSE 4.2 or later\",InstructionSet_AVX2:\"Processor with Advanced Vector Extensions 2 (AVX2) support required\"},it_IT:{OperatingSystemWin:\"Windows 11 versione 23H2 o versione successiva\",OperatingSystemMac:\"macOS 14.0 o versione successiva \",InstructionSet_SSE42:\"SSE 4.2 o versione successiva \",InstructionSet_AVX2:\"\u00c8 richiesto un processore che supporti Advanced Vector Extensions 2 (AVX2)\"},ja_JP:{OperatingSystemWin:\"Windows 11 \u30d0\u30fc\u30b8\u30e7\u30f3 23H2 \u4ee5\u964d\",OperatingSystemMac:\"macOS 14.0 \u4ee5\u964d\",InstructionSet_SSE42:\"SSE 4.2 \u4ee5\u964d\",InstructionSet_AVX2:\"Advanced Vector Extensions 2\uff08AVX2\uff09\u5bfe\u5fdc\u306e\u30d7\u30ed\u30bb\u30c3\u30b5\u30fc\u304c\u5fc5\u8981\"},ko_KR:{OperatingSystemWin:\"Windows 11 \ubc84\uc804 23H2 \uc774\uc0c1\",OperatingSystemMac:\"macOS 14.0 \uc774\uc0c1\",InstructionSet_SSE42:\"SSE 4.2 \uc774\uc0c1\",InstructionSet_AVX2:\"AVX2(\uace0\uae09 \ubca1\ud130 \ud655\uc7a5 2)\ub97c \uc9c0\uc6d0\ud558\ub294 \ud504\ub85c\uc138\uc11c \ud544\uc694\"},nb_NO:{OperatingSystemWin:\"Windows 11 versjon 23H2 eller senere\",OperatingSystemMac:\"macOS 14.0 eller senere\",InstructionSet_SSE42:\"SSE 4.2 eller senere\",InstructionSet_AVX2:\"En processor med st\u00f8tte for Advanced Vector Extensions 2 (AVX2) er p\u00e5krevd\"},nl_NL:{OperatingSystemWin:\"Windows 11 versie 23H2 of hoger\",OperatingSystemMac:\"macOS 14.0 of hoger\",InstructionSet_SSE42:\"SSE 4.2 of hoger\",InstructionSet_AVX2:\"Processor met Advanced Vector Extensions 2 (AVX2) -ondersteuning vereist\"},pl_PL:{OperatingSystemWin:\"Windows 11 w wersji 23H2 lub nowszy\",OperatingSystemMac:\"macOS 14.0 lub nowszy\",InstructionSet_SSE42:\"SSE 4.2 lub nowszy\",InstructionSet_AVX2:\"Wymagany procesor z obs\u0142ug\u0105 Advanced Vector Extensions 2 (AVX2)\"},pt_BR:{OperatingSystemWin:\"Windows 11 vers\u00e3o 23H2 ou posterior\",OperatingSystemMac:\"macOS 14.0 ou posterior\",InstructionSet_SSE42:\"SSE 4.2 ou posterior\",InstructionSet_AVX2:\"\u00c9 preciso suporte parar processador com Extens\u00f5es de vetor avan\u00e7adas 2 (AVX2)\"},ru_RU:{OperatingSystemWin:\"Windows 11 \u0432\u0435\u0440\u0441\u0438\u0438 23H2 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u043f\u043e\u0437\u0434\u043d\u0438\u0435 \u0432\u0435\u0440\u0441\u0438\u0438\",OperatingSystemMac:\"macOS 14.0 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u043f\u043e\u0437\u0434\u043d\u0438\u0435 \u0432\u0435\u0440\u0441\u0438\u0438\",InstructionSet_SSE42:\"SSE 4.2 \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u043f\u043e\u0437\u0434\u043d\u0438\u0435 \u0432\u0435\u0440\u0441\u0438\u0438\",InstructionSet_AVX2:\"\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0440, \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0449\u0438\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0438 Advanced Vector Extensions 2 (AVX2)\"},sv_SE:{OperatingSystemWin:\"Windows 11 version 23H2 och senare\",OperatingSystemMac:\"macOS 14.0 eller senare\",InstructionSet_SSE42:\"SSE 4.2 eller senare\",InstructionSet_AVX2:\"Processor med st\u00f6d f\u00f6r AVX2 (Advanced Vector Extensions 2) kr\u00e4vs\"},tr_TR:{OperatingSystemWin:\"Windows 11 s\u00fcr\u00fcm 23H2 veya \u00fczeri\",OperatingSystemMac:\"macOS 14.0 veya \u00fczeri\",InstructionSet_SSE42:\"SSE 4.2 veya \u00fczeri\",InstructionSet_AVX2:\"Advanced Vector Extensions 2 (AVX2) i\u015flemcili destek gerektirir\"},uk_UA:{OperatingSystemWin:\"Windows 11 \u0432\u0435\u0440\u0441\u0456\u0457 23H2 \u0430\u0431\u043e \u043d\u043e\u0432\u0456\u0448\u043e\u0457 \u0432\u0435\u0440\u0441\u0456\u0457\",OperatingSystemMac:\"macOS 14.0 \u0430\u0431\u043e \u043d\u043e\u0432\u0456\u0448\u043e\u0457 \u0432\u0435\u0440\u0441\u0456\u0457\",InstructionSet_SSE42:\"SSE 4.2 \u0430\u0431\u043e \u043d\u043e\u0432\u0456\u0448\u043e\u0457 \u0432\u0435\u0440\u0441\u0456\u0457\",InstructionSet_AVX2:\"\u041f\u043e\u0442\u0440\u0456\u0431\u0435\u043d \u043f\u0440\u043e\u0446\u0435\u0441\u043e\u0440 \u0456\u0437 \u043f\u0456\u0434\u0442\u0440\u0438\u043c\u043a\u043e\u044e Advanced Vector Extensions 2 (AVX2)\"},vi_VN:{OperatingSystemWin:\"Windows 11 version 23H2 or later\",OperatingSystemMac:\"macOS 14.0 or later\",InstructionSet_SSE42:\"SSE 4.2 or later\",InstructionSet_AVX2:\"Processor with Advanced Vector Extensions 2 (AVX2) support required\"},zh_CN:{OperatingSystemWin:\"Windows 11 \u7248\u672c 23H2 \u6216\u66f4\u9ad8\u7248\u672c\",OperatingSystemMac:\"macOS 14.0 \u6216\u66f4\u9ad8\u7248\u672c\",InstructionSet_SSE42:\"SSE 4.2 \u6216\u66f4\u9ad8\u7248\u672c\",InstructionSet_AVX2:\"\u9700\u8981\u652f\u6301\u9ad8\u7ea7\u77e2\u91cf\u6269\u5c55 2 (AVX2) \u7684\u5904\u7406\u5668\"},zh_TW:{OperatingSystemWin:\"Windows 11 \u7248\u672c 23H2 \u6216\u66f4\u65b0\u7248\u672c\",OperatingSystemMac:\"macOS 14.0 \u6216\u66f4\u65b0\u7248\u672c\",InstructionSet_SSE42:\"SSE 4.2 \u6216\u66f4\u65b0\u7248\u672c\",InstructionSet_AVX2:\"\u9700\u8981\u5177\u5099\u9032\u968e\u5411\u91cf\u64f4\u5145\u6307\u4ee4\u96c6 2 (AVX2) \u652f\u63f4\u7684\u8655\u7406\u5668\"}};var locale=\"en_US\";function getLocalizedString(a,f,d){var c;try{c=localizationStringMap[locale][a]}catch(b){c=\"undefined\"}if(f){c=c.replace(\"{0}\",f)}if(d){c=c.replace(\"{1}\",d)}return c}function compareVersion(f,d){if(f===d){return 0}var j=f.split(\".\");var e=d.split(\".\");var c=Math.max(j.length,e.length);for(var h=0;h<c;h++){var k=0;var g=0;if(h<j.length){k=parseInt(j[h])}if(h<e.length){g=parseInt(e[h])}if(k>g){return 1}if(k<g){return -1}}return 0}function arrayContains(a,b){for(var c=0;c<a.length;c++){if(a[c]==b){return c}}return -1}function checkCompatibility(j,i){var q={};q.checkResult=\"success\";q.failingList=[];var d,n;try{d=JSON.parse(j);n=JSON.parse(i)}catch(k){q.failingList.push({type:\"generic\",message:\"Error parsing JSON\"});return JSON.stringify(q)}var b=d.context;locale=d.locale;if(!locale||!localizationStringMap[locale]){locale=\"en_US\"}var l=n.os;var p=true;var f;if(l&&l.type&&l.type.indexOf(\"win\")!=-1){f=winChecks;var h=l.version+\".\"+l.buildNumber;var o=l.architecture;var c=winChecks.excludedOSVersions.length;var g=false;for(index=0;index<c;index++){if(h.indexOf(winChecks.excludedOSVersions[index])==0){g=true}}if((h&&compareVersion(h,winChecks.minOSVersion)<0)||g){q.failingList.push({type:\"OS\",message:getLocalizedString(\"OperatingSystemWin\")});q.checkResult=\"fail\"}}else{if(l){p=false;f=macChecks;var h=l.version;var o=l.architecture;if(h&&compareVersion(h,macChecks.minOSVersion)<0){q.failingList.push({type:\"OS\",message:getLocalizedString(\"OperatingSystemMac\")});q.checkResult=\"fail\"}var c=macChecks.permissiveOS.length;var a=false;if(h&&q.checkResult==\"success\"&&compareVersion(h,macChecks.permissiveOS)<0){a=true}if(a){q.checkResult=\"warn\"}}}var m=n.processor[\"instructionSet\"];if(m){if(typeof m==\"string\"){m=JSON.parse(m)}if(arrayContains(m,\"HW_SSE42\")==-1){q.failingList.push({type:\"SSE\",message:getLocalizedString(\"InstructionSet_SSE42\")});q.checkResult=\"fail\"}if(arrayContains(m,\"HW_AVX2\")==-1){q.failingList.push({type:\"AVX\",message:getLocalizedString(\"InstructionSet_AVX2\")});q.checkResult=\"fail\"}}return JSON.stringify(q)};"
+  }
+ },
+ "BuildGuid": "705f50ee-b3c7-4b88-b2af-4294f15bc0f0",
+ "Packages": {
+  "Package": [
+   {
+    "Type": "core",
+    "PackageName": "AdobePhotoshop27-Core",
+    "PackageVersion": "27.11.0.26",
+    "DownloadSize": 2598874674,
+    "ExtractSize": 6467817959,
+    "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/AdobePhotoshop27-Core.zip",
+    "Features": {
+     "Feature": []
+    },
+    "Format": "zip",
+    "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148226",
+    "packageHashKey": "2134474caefb3210b3a5b65b7621c45312697f2be36533c5228e71044a69301a",
+    "DeltaPackages": [
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_delta_27_10_0_26_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-Core_delta_27_10_0_26",
+      "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_delta_27_10_0_26.zip",
+      "BasePackageVersion": "27.10.0.26",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/56343?type=delta",
+      "DownloadSize": 88075026,
+      "ExtractSize": 96188920,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_delta_27_10_0_26_diff.json"
+     },
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_delta_27_9_1_1_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-Core_delta_27_9_1_1",
+      "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_delta_27_9_1_1.zip",
+      "BasePackageVersion": "27.9.1.1",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/56344?type=delta",
+      "DownloadSize": 126128050,
+      "ExtractSize": 153281068,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_delta_27_9_1_1_diff.json"
+     }
+    ],
+    "ValidationURLs": {
+     "TYPE2": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148226?algorithm=TYPE2",
+     "TYPE1": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148226?algorithm=TYPE1"
+    },
+    "Condition": "[OSArchitecture]==arm64",
+    "ProcessorFamily": "64-bit",
+    "InstallSequenceNumber": 1001,
+    "fullPackageName": "AdobePhotoshop27-Core.zip",
+    "PackageValidation": "VNccd2FChxeb9nXMrhEdf+aOxpAQbC84KtjKMR2boSYvGj1ZxggDJ9ZFJLQLBc8mieA7lJ3wqvKaWmQX6YKTlbs4fDj4Ux5YP+xIoCiemwAvoDehHQYZ1rKzkbTzh1T5qM72ARliBrHqtg7PgJpwFYMBZuVYZno5qtPjF7WMd6sP9M4tffpixqF/0vwZSsSShZ/R5+TqEuklnslzPj/TltfqSAJwKqIWgvLtoPfSReasKb9Dx7jzy10kZoLYZIPTmVvfZgXvdEFySwWK4WA2CYFLlOFmxffXUU+csv4IQWDn9SIXHX2eJ4jz6/ah6NxRFeSMviJCY+gCiL+lNIHpuyPe0oDlt9iOKrVJPFUCiy8F1Ne147KkMzsV3y68aLq5JyS37yw0puQZ9FMfLtHlLds+6axvK0Ue1HrrpMWBOwAah3GVwNZhC63wecB83LaDcRGATR40AQ5dx+TnJsEpmMotXccu0KSA0vdSkVbVCS2uMFZEioJFkSVxBhb23ZHs",
+    "AliasPackageName": "1",
+    "PackageScheme": "hd-standard"
+   },
+   {
+    "Type": "core",
+    "PackageName": "AdobePhotoshop27-Core_stripped",
+    "PackageVersion": "27.11.0.26",
+    "DownloadSize": 2329631760,
+    "ExtractSize": 5171304823,
+    "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/AdobePhotoshop27-Core_stripped.zip",
+    "Features": {
+     "Feature": []
+    },
+    "Format": "zip",
+    "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148227",
+    "packageHashKey": "d1a40fdc586164bb8d4379daecdbcbc0861fdfa2e0fa4192c56046c9d35f4410",
+    "DeltaPackages": [
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_stripped_delta_27_9_1_1_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-Core_stripped_delta_27_9_1_1",
+      "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_stripped_delta_27_9_1_1.zip",
+      "BasePackageVersion": "27.9.1.1",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/56346?type=delta",
+      "DownloadSize": 76750433,
+      "ExtractSize": 100791996,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_stripped_delta_27_9_1_1_diff.json"
+     },
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_stripped_delta_27_10_0_26_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-Core_stripped_delta_27_10_0_26",
+      "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_stripped_delta_27_10_0_26.zip",
+      "BasePackageVersion": "27.10.0.26",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/56345?type=delta",
+      "DownloadSize": 54272599,
+      "ExtractSize": 62352084,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-Core_stripped_delta_27_10_0_26_diff.json"
+     }
+    ],
+    "ValidationURLs": {
+     "TYPE2": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148227?algorithm=TYPE2",
+     "TYPE1": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148227?algorithm=TYPE1"
+    },
+    "Condition": "[OSArchitecture]==x64",
+    "ProcessorFamily": "64-bit",
+    "InstallSequenceNumber": 1002,
+    "fullPackageName": "AdobePhotoshop27-Core_stripped.zip",
+    "PackageValidation": "z0XMH08mU3GlMeZchzR56e+F90yLONihdE2u5Wg/Jf6QrrX8Wos7P+kmPHMGOfIAJhAmbgmtusOJq3ptt7RE2ROPo2NZ+zJtdQtndn1Ci6FiwWqPY304htNBt0F8BcFRkDK6yb4H/YXJJP6FFjl3L+BKhJ+Lp5P24SgLeuYn4rPhA7lP/0d+evOuNJ4lqrXbzvBNSKrRlg8j/1Ojj1C7+jfTfoYYo+IYYO+ttGxLwUi15cxK2GniRSFrj8i1sVhNxQ5NaPgOYcCVRRQcS+2YXouslRkXqJlQSkk+zu40ylClnKy70/LelwhGzwmnVKigN0QKio2Z0Rbu9nFc8Azm/GX50nndgBHlADlotSEqm3rIiGYAf48lCVZx2WhQTw9nH7w/kudeLBIuCCLEEi+E2dTjIw26QafUzu/fUtpERN7rg8swR/L4LRAwR4yAvCMNzitpDpMFEtjjT/AMFvnW/P6Csozscd2SSn+Y5+W/zF840Q1wDd7h9ZzLvHEflcMN",
+    "AliasPackageName": "2",
+    "PackageScheme": "hd-standard"
+   },
+   {
+    "Type": "core",
+    "PackageName": "AdobePhotoshop27-de_DE",
+    "PackageVersion": "27.11.0.26",
+    "DownloadSize": 575386,
+    "ExtractSize": 6104701,
+    "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/AdobePhotoshop27-de_DE.zip",
+    "Features": {
+     "Feature": []
+    },
+    "Format": "zip",
+    "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148232",
+    "packageHashKey": "10086ac27331f6528d7cd69b82dd7eae1a7edd0fdb553ef638f88290773a260b",
+    "DeltaPackages": [
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-de_DE_delta_27_10_0_26_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-de_DE_delta_27_10_0_26",
+      "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-de_DE_delta_27_10_0_26.zip",
+      "BasePackageVersion": "27.10.0.26",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/56355?type=delta",
+      "DownloadSize": 17795,
+      "ExtractSize": 21906,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-de_DE_delta_27_10_0_26_diff.json"
+     },
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-de_DE_delta_27_9_0_19_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-de_DE_delta_27_9_0_19",
+      "Path": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-de_DE_delta_27_9_0_19.zip",
+      "BasePackageVersion": "27.9.0.19",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/56356?type=delta",
+      "DownloadSize": 51567,
+      "ExtractSize": 55621,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.11.0.26/macuniversal/4b2dd6a4-8c6a-472b-b668-1212d903f554/delta/AdobePhotoshop27-de_DE_delta_27_9_0_19_diff.json"
+     }
+    ],
+    "ValidationURLs": {
+     "TYPE2": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148232?algorithm=TYPE2",
+     "TYPE1": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/148232?algorithm=TYPE1"
+    },
+    "Condition": "[installLanguage]==de_DE",
+    "ProcessorFamily": "64-bit",
+    "InstallSequenceNumber": 1007,
+    "fullPackageName": "AdobePhotoshop27-de_DE.zip",
+    "PackageValidation": "a3wIa/iKt02JWnjiC+hJp1hpeO1iTxH36FO1E4HjO9kiqiFm8QoBhdtJ0vdrJbgAl2/u1pf2y/0FetyLh5pkNG5rQYcr4EaF6g0mmS3f0YoSw0AfjcG+3L1ac+HK9qikxWBYZGbhAS73d0tupySDGlGu7ImpOmI9n25LeAAYC0JFi6jDzwrNAtH5k2/BLZ7p8unvwlNSQwOu/WowF941jskf0CHV8AFDJw5EHRe+OJUQ5L9s0GpEq1CCOH5cBAcdYFcaqxbDlP4+hhFESGxPdmCskm8BGn/7wYzM4lU/pbKvuAf6S67OxvNIJPMy1L2TM8FREYUndk1qhm3zABxwM39TN94JrnGNAeLfrsCvONS88lAVucAWkm0HiDP0Yplzxtr4nQhSD9/RLuQo0hdjtcqg2kiHVGdcrTv5kvcpzBDcKeEnbhnvo46fi2tNWbl6IA68JIILxDGDXuTTpy5ORNJWIr+HwMhoj+RzL2MOyv6KqDzSo4QKPP2RE7gTO5fu",
+    "AliasPackageName": "7",
+    "PackageScheme": "hd-standard"
+   },
+   {
+    "Type": "core",
+    "PackageName": "AdobePhotoshop27-en_US",
+    "PackageVersion": "27.9.0.19",
+    "DownloadSize": 53146,
+    "ExtractSize": 261061,
+    "Path": "/AdobeProducts/PHSP/27.9.0.19/macuniversal/d9a3afe8-ef31-4b52-b801-7f99a4860bbc/AdobePhotoshop27-en_US.zip",
+    "Features": {
+     "Feature": []
+    },
+    "Format": "zip",
+    "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/142651",
+    "packageHashKey": "05facacad9d940abccfec2064b4f6d01cf151e8ebdad8e2d029d162b0870c356",
+    "DeltaPackages": [
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.9.0.19/macuniversal/d9a3afe8-ef31-4b52-b801-7f99a4860bbc/delta/AdobePhotoshop27-en_US_delta_27_0_0_25_diff.json"
+      },
+      "SchemaVersion": "1.0.123",
+      "PackageName": "AdobePhotoshop27-en_US_delta_27_0_0_25",
+      "Path": "/AdobeProducts/PHSP/27.9.0.19/macuniversal/d9a3afe8-ef31-4b52-b801-7f99a4860bbc/delta/AdobePhotoshop27-en_US_delta_27_0_0_25.zip",
+      "BasePackageVersion": "27.0.0.25",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/52434?type=delta",
+      "DownloadSize": 2218,
+      "ExtractSize": 6327,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.9.0.19/macuniversal/d9a3afe8-ef31-4b52-b801-7f99a4860bbc/delta/AdobePhotoshop27-en_US_delta_27_0_0_25_diff.json"
+     }
+    ],
+    "ValidationURLs": {
+     "TYPE2": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/142651?algorithm=TYPE2",
+     "TYPE1": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/142651?algorithm=TYPE1"
+    },
+    "Condition": "[installLanguage]==en_US",
+    "ProcessorFamily": "64-bit",
+    "InstallSequenceNumber": 1017,
+    "fullPackageName": "AdobePhotoshop27-en_US.zip",
+    "PackageValidation": "q9ajKpzx+NULpDXybIhSyU+933xqIBTsHRGPJ8kvCYWm9JRkxON5N5ATD3LpbXt+fAooc5FW/I4iff+sL4ubxyWhyUVdlKP4ciFQdnW4UtcvF0OXQBqrxJacdGbXt0CkOOjUUcAvhfXK0ETjYrEjN+xbE14BFHFsn4Ot+QzkO3xVhn4SB5b4WfwOttvxg69dCnnvME8IFF5a2INheTOB1lmfSxnVi05fCwYS2bwTph0XBWcmGhIaJzAqlkt4odS6buU+6J9GmiqkAasOgFFKjMFLcqQXjdS13xbVXNTQRHfFp+YS+7bFouczu3qaGgAwmvYDftkZYNgZic8nC0MrBCCE+Oafajl5AqGWoYfpOmmA7zSEd+gwc5azsfo2Y/Y7qSOJujkzhrx11p/sGYczysmbMlgzp4P9TTXKnhaqKu2HW1nJLu/HGAycieEq51DC3kAADcajxuMFB/HHhipfNKlrqU0wikSyg/bFxz1ZbL8Qgde9h2xaNp5jaX5YMnzD",
+    "AliasPackageName": "17",
+    "PackageScheme": "hd-standard"
+   },
+   {
+    "Type": "non-core",
+    "PackageName": "AdobePhotoshop27-SuperCafModels",
+    "PackageVersion": "27.6.0.11",
+    "DownloadSize": 718935512,
+    "ExtractSize": 718905807,
+    "Path": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/AdobePhotoshop27-SuperCafModels.zip",
+    "Features": {
+     "Feature": []
+    },
+    "Format": "zip",
+    "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/135925",
+    "packageHashKey": "4b5bf31dd6b7d433a03f246cb91d3b099f22be7cdf25fdd3228bc2686e7b9c96",
+    "DeltaPackages": [
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/delta/AdobePhotoshop27-SuperCafModels_delta_27_5_0_13_diff.json"
+      },
+      "SchemaVersion": "1.0.102",
+      "PackageName": "AdobePhotoshop27-SuperCafModels_delta_27_5_0_13",
+      "Path": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/delta/AdobePhotoshop27-SuperCafModels_delta_27_5_0_13.zip",
+      "BasePackageVersion": "27.5.0.13",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/45949?type=delta",
+      "DownloadSize": 131432662,
+      "ExtractSize": 131400951,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/delta/AdobePhotoshop27-SuperCafModels_delta_27_5_0_13_diff.json"
+     },
+     {
+      "additionalInfo": {
+       "MetadataFilePath": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/delta/AdobePhotoshop27-SuperCafModels_delta_27_3_0_13_diff.json"
+      },
+      "SchemaVersion": "1.0.102",
+      "PackageName": "AdobePhotoshop27-SuperCafModels_delta_27_3_0_13",
+      "Path": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/delta/AdobePhotoshop27-SuperCafModels_delta_27_3_0_13.zip",
+      "BasePackageVersion": "27.3.0.13",
+      "ValidationURL": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/45950?type=delta",
+      "DownloadSize": 131432623,
+      "ExtractSize": 131400645,
+      "MetadataFilePath": "/AdobeProducts/PHSP/27.6.0.11/macuniversal/4eb33cbe-5317-4529-8b44-a6791afeb025/delta/AdobePhotoshop27-SuperCafModels_delta_27_3_0_13_diff.json"
+     }
+    ],
+    "ValidationURLs": {
+     "TYPE2": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/135925?algorithm=TYPE2",
+     "TYPE1": "https://cdn-ffc.oobesaas.adobe.com/core/v2/validation/135925?algorithm=TYPE1"
+    },
+    "InstallSequenceNumber": 7001,
+    "fullPackageName": "AdobePhotoshop27-SuperCafModels.zip",
+    "PackageValidation": "01sVTj8a0B4x7FWCC+1NvziI2vLsp4nry52cPQ3/0Obk7LToNDjIKmDzjHdILf/Xvzq5C/UE1936gu3gVmZ8r0mTyARQ4tvcG3tB65HhNhi7SlBdfeRKncEFS+4s/c1liNIriYebk6232NrnCwxmQhPOCtIYtQ+ErSfHvVePvGzTzEbBwI766eoPw2txm9nc4CRsbTQUmmANcYhzEkyzo1VvNfeTDDTXBOy0kJtgt0D20ugSSksdiTdSv9zkH3psaow8KZYBlktXlNNw72v6TO+yNVEt64lkWfHn1OcWjx+DwW0WXvLh2wHBYCDHHTW+vRhUy+YiEcJy+s2t49EFKMQ+wcsQz0PNey7ngw9ApHSafqGyEcvBkJu19b6WBo5Ra0PzmcL8Be0jZFTqtrnZrw/FBGppLy9htnibIDvveRC+Ig50glNAU7pCiCTbE85c0jpnPy61zdkgAG2ZgfrNBz1DUMJctjB/m4+fLB4V+8z89WvHBHuoTbZdDWfmeVXK",
+    "AliasPackageName": "32",
+    "PackageScheme": "hd-standard"
+   }
+  ]
+ }
+}

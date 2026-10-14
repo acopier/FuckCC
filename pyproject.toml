@@ -1,0 +1,31 @@
+[project]
+name = "fuckcc"
+version = "0.1.0"
+description = "Download and install Adobe desktop apps from Adobe's own CDN without the Creative Cloud desktop app."
+readme = "README.md"
+requires-python = ">=3.14"
+license = "MIT"
+authors = [{ name = "fuckcc contributors" }]
+keywords = ["adobe", "cli", "creative-cloud", "installer", "macos"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+]
+
+# Standard library only. No third-party runtime dependencies on purpose so the
+# tool is trivially installable and prunable by Homebrew.
+dependencies = []
+
+[project.scripts]
+fuckcc = "fuckcc.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

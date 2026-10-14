@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# fuckcc launcher.
+#
+# Runs fuckcc from whatever tree this file lives in. It works both when invoked
+# directly from the source tree (dev) and when Homebrew symlinks it into
+# $(brew --prefix)/bin (cask install): the symlink chain is resolved so that
+# PYTHONPATH points at the bundled `src/` next to this script.
+set -euo pipefail
+
+src="${BASH_SOURCE[0]}"
+while [ -L "$src" ]; do
+  dir="$(cd -P "$(dirname "$src")" >/dev/null 2>&1 && pwd)"
+  src="$(readlink "$src")"
+  case "$src" in
+    /*) ;;
+    *) src="$dir/$src" ;;
+  esac
+done
+root="$(cd -P "$(dirname "$src")/.." >/dev/null 2>&1 && pwd)"
+
+if [ -n "${FUCKCC_PYTHON:-}" ]; then
+  py="$FUCKCC_PYTHON"
+elif [ -n "${PYTHON:-}" ]; then
+  py="$PYTHON"
+elif command -v python3.12 >/dev/null 2>&1; then
+  py="python3.12"
+else
+  py="python3"
+fi
+
+export PYTHONPATH="$root/src${PYTHONPATH:+:$PYTHONPATH}"
+exec "$py" -m fuckcc "$@"
