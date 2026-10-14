@@ -81,6 +81,7 @@ def download_plan(
         return results
 
     def _job(item: tuple[Unit, Package]) -> tuple[tuple[Unit, Package], str]:
+        unit, pkg = item
         dest = _cache_path(pkg.sap_code, pkg.filename)
         client.download(
             pkg.url,
