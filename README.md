@@ -96,6 +96,8 @@ fuckcc list                       # installable products (SAP codes)
 fuckcc versions PHSP              # versions available
 fuckcc languages PHSP             # install languages
 fuckcc install PHSP --lang en_US  # download + install
+fuckcc uninstall PHSP              # uninstall an Adobe product
+fuckcc uninstall PHSP --purge      # also remove product-specific leftovers
 fuckcc fetch PPRO --minimal       # just stage an offline package
 fuckcc engine status
 fuckcc engine harvest ~/Downloads/AdobePhotoshop-package.zip

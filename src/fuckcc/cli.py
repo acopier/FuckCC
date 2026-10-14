@@ -144,8 +144,7 @@ def cmd_fetch(args: Namespace, client: AdobeClient) -> int:
     root = build_tree(plan, downloaded, install_dir=args.install_dir)
     ok(f"package ready: {root}")
     info(
-        "Install with: fuckcc install %s  (or run the generated .command)"
-        f"{plan.target_sap}"
+        f"Install with: fuckcc install {plan.target_sap}  (or run the generated .command)"
     )
     return 0
 
@@ -186,6 +185,53 @@ def cmd_install(args: Namespace, client: AdobeClient) -> int:
         error(f"Adobe Setup exited with code {proc.returncode}")
         return proc.returncode
     ok("install finished")
+    return 0
+
+
+def cmd_uninstall(args: Namespace, client: AdobeClient) -> int:
+    sap_code = args.sap.upper()
+    eng = args.engine or engine_mod.find_engine()
+    if not eng:
+        error("Adobe Setup engine not found.")
+        info("Seed it once with 'fuckcc engine harvest <path>'.")
+        return 3
+
+    cmd = [
+        eng,
+        "--uninstall=1",
+        f"--sapCode={sap_code}",
+        f"--installDir={args.install_dir}",
+    ]
+    if args.dry_run:
+        info("would run: sudo " + " ".join(cmd))
+        return 0
+    if not args.yes and not confirm(
+        f"Uninstall {sap_code} now (requires admin)?", default=False
+    ):
+        info("uninstall cancelled")
+        return 0
+
+    step(f"Uninstalling {sap_code} via {eng}")
+    proc = subprocess.run(["sudo"] + cmd, check=False)
+    if proc.returncode != 0:
+        error(f"Adobe Setup exited with code {proc.returncode}")
+        return proc.returncode
+    ok(f"uninstall finished for {sap_code}")
+    if args.purge:
+        leftovers = engine_mod.product_cleanup_paths(sap_code, args.install_dir)
+        if leftovers:
+            if not args.yes and not confirm(
+                f"Remove {len(leftovers)} leftover {sap_code} path(s)?", default=False
+            ):
+                info("leftover files kept")
+                return 0
+            purge = subprocess.run(["sudo", "rm", "-rf", *leftovers], check=False)
+            if purge.returncode != 0:
+                error(f"could not remove leftover files (exit code {purge.returncode})")
+                return purge.returncode
+            ok(f"removed {len(leftovers)} leftover {sap_code} path(s)")
+        else:
+            info(f"no product-specific leftover paths found for {sap_code}")
     return 0
 
 
@@ -329,6 +375,23 @@ def build_parser() -> argparse.ArgumentParser:
         "--yes", action="store_true", help="do not confirm before running Setup"
     )
     p_inst.set_defaults(func=cmd_install)
+
+    p_uninst = sub.add_parser("uninstall", help="uninstall an Adobe product")
+    p_uninst.add_argument("sap", help="product SAP code, e.g. PHSP")
+    p_uninst.add_argument(
+        "--install-dir", default="/Applications", help="installation root"
+    )
+    p_uninst.add_argument("--engine", default=None, help="path to Adobe Setup binary")
+    p_uninst.add_argument("--dry-run", action="store_true")
+    p_uninst.add_argument(
+        "--purge",
+        action="store_true",
+        help="remove product-specific app, support, cache, and log paths",
+    )
+    p_uninst.add_argument(
+        "--yes", action="store_true", help="do not confirm before running Setup"
+    )
+    p_uninst.set_defaults(func=cmd_uninstall)
 
     p_eng = sub.add_parser("engine", help="manage Adobe's Setup engine")
     eng_sub = p_eng.add_subparsers(dest="engine_action", required=True)

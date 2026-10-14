@@ -17,6 +17,7 @@ Three ways to obtain it:
 
 from __future__ import annotations
 
+import glob
 import os
 import shutil
 import subprocess
@@ -30,6 +31,19 @@ from .ui import confirm, human_bytes, ok, step, warn
 
 SYSTEM_ENGINE = "/Library/Application Support/Adobe/Adobe Desktop Common/HDBox/Setup"
 SYSTEM_HD_BOX_DIR = "/Library/Application Support/Adobe/Adobe Desktop Common/HDBox"
+
+_PRODUCT_NAMES: dict[str, str] = {
+    "AEFT": "After Effects",
+    "AME": "Media Encoder",
+    "AUDT": "Audition",
+    "DRWV": "Dreamweaver",
+    "IDSN": "InDesign",
+    "ILST": "Illustrator",
+    "KBRG": "Bridge",
+    "LTRM": "Lightroom",
+    "PHSP": "Photoshop",
+    "PPRO": "Premiere Pro",
+}
 
 
 def managed_hd_box_dir() -> str:
@@ -57,6 +71,20 @@ def status() -> dict[str, str | bool | None]:
     info["managed_exists"] = os.path.isfile(managed_setup())
     info["system_exists"] = os.path.isfile(SYSTEM_ENGINE)
     return info
+
+
+def product_cleanup_paths(
+    sap_code: str, install_dir: str = "/Applications"
+) -> list[str]:
+    """Return product-specific app and user-support paths that actually exist."""
+    product_name = _PRODUCT_NAMES.get(sap_code.upper(), sap_code.upper())
+    patterns = [
+        os.path.join(install_dir, f"Adobe {product_name}*"),
+        os.path.expanduser(f"~/Library/Application Support/Adobe/{product_name}*"),
+        os.path.expanduser(f"~/Library/Caches/Adobe/{product_name}*"),
+        os.path.expanduser(f"~/Library/Logs/Adobe/{product_name}*"),
+    ]
+    return sorted({path for pattern in patterns for path in glob.glob(pattern)})
 
 
 # -- harvesting --------------------------------------------------------------
